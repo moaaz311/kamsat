@@ -560,3 +560,42 @@ nav{
     font-weight: bold;
 }
 /*end of section 6*/
+/*taplets*/
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    .search-container {
+        width: 90%;
+    }
+    .cate div, .photo div, .lists div, .reci div {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+/*phones*/
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    .n3 {
+        margin-left: 0;
+    }
+    .navimg {
+        max-width: 100px;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .search-container {
+        width: 100%;
+    }
+    .cate div, .photo div, .lists div, .reci div {
+        flex: 1 1 100%;
+    }
+}
